@@ -8,8 +8,8 @@ import { Observable, of} from 'rxjs';
 })
 export class HeroService {
 
-  getHeroes(): IHero[] {
-    return HEROES;
+  getHeroes(): Observable<IHero[]> {
+    return of(HEROES);
   }
   constructor() { }
 }
